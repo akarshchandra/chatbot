@@ -1,0 +1,196 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+
+- intent: give_details
+  examples: |
+    - ready with my info
+    - take my information 
+    - i am ready with my PHI
+    - i consent to collect my PHI
+    - here's my PHI 
+
+- intent: inform_name
+  examples: |
+    - you can call me [John](user_name)
+    - my name is [Santosh] (user_name)
+    - i am [rocky] (user_name)
+    - [kent](user_name)
+    - [Ricky](user_name)
+    - [Aditi](user_name)
+    - [Marry](user_name)
+    - [hetty](user_name)
+    - [Testuser](user_name)
+    - [testuser](user_name)
+    - [Testuser1](user_name)
+    - [Testuser2](user_name)
+    - [Testuser10](user_name)
+    - [User1](user_name)
+    - [user1](user_name)
+    - My name is [John](name)
+    - This is [Kim](name)
+    - name is [Steve](name)
+    - myself [Harhsal](name)
+    - [Michele](name)
+    - [Jane](name)
+    - [Akarsh](name)
+    - It is [himala](name)
+    - [sheron](name)
+    - [supriya](name)
+    - [Jorjeta](name)
+    - [Suriya](name)
+
+- intent: inform_dob
+  examples: |
+    - my birtday is on [05-1995](user_age)
+    - i was born on [12-2001](user_age)
+    - my birtday[01-1970](user_age)
+    - [11-1970](user_age)
+    - [10-2011](user_age)
+    - [06-1980](user_age)
+    - [08 1970](user_age)
+    - [12 2010](user_age)
+
+- intent: inform_weight
+  examples: |
+    - I weigh [90](user_weight) pounds
+    - my weight is [120](user_weight) lbs 
+    - [110](user_weight) pounds
+    - [140](user_weight) lbs 
+    - [120](user_weight) lb
+    - [111](user_weight) lbs
+    - [96](user_weight) pounds
+    - [90](user_weight) lbs
+
+- intent: inform_height
+  examples: |
+    - I height [55](user_height) inches
+    - my height is [60](user_height) inches
+    - i am [65](user_height) inches tall
+    - [62](user_height) inches
+    - [64](user_height) inches
+    - [73](user_height) in 
+    - [73](user_height) in
+
+- intent: query_nutrition
+  examples: |
+    - nutrition of  [cucumber](user_fquery)
+    - nutrients in  [cucumber](user_fquery)
+    - nutrition of  [egg](user_fquery)
+    - nutrients in  [egg](user_fquery)
+    - nutrition of  [apple](user_fquery)
+    - nutrients in  [apple](user_fquery)
+    - calories in [beef](user_fquery)
+    - calories in [pork](user_fquery)
+    - calories in [banana](user_fquery)
+
+- intent: query_label
+  examples: |
+    - show label [snickers](user_labquery)
+    - show label [pepsi](user_labquery)
+    - show label [cheerios](user_labquery)
+    - show label [lays](user_labquery)
+    - show label [jif](user_labquery)
+    - show label [cracker jack](user_labquery)
+    - show label [coke zero](user_labquery)
+    - label [snickers](user_labquery)
+    - label [cheerios](user_labquery)
+    - label [lays](user_labquery)
+    - label [jif](user_labquery)
+    - label [cracker jack](user_labquery)
+    - label [coke zero](user_labquery)
+  
+- intent: query_exercise
+  examples: |
+    - fetch workout that target [biceps](user_exercisequery)
+    - workout that target [biceps](user_exercisequery)
+    - target [biceps](user_exercisequery)
+    - fetch workout that target [abdominals](user_exercisequery)
+    - workout that target [abdominals](user_exercisequery)
+    - target [abdominals](user_exercisequery)
+    - fetch workout that target [chest](user_exercisequery)
+    - workout that target [chest](user_exercisequery)
+    - target [chest](user_exercisequery)
+    - fetch workout that target [calves](user_exercisequery)
+    - workout that target [calves](user_exercisequery)
+    - target [calves](user_exercisequery)
+    - workout that target [forearms](user_exercisequery)
+    - workout that target [glutes](user_exercisequery)
+    - workout that target [triceps](user_exercisequery)
+    - workout that target [traps](user_exercisequery)
+    - workout that target [neck](user_exercisequery)
+
+- intent: query_emotion
+  examples: |
+    -[just had a real good moment. i misss him so much](user_emotion)
+    -[so sleepy. good times tonight thoug](user_emotion)
+    -[I just created my WordPress Blog. There's already a blog up on the Seattle Coffee Community](user_emotion)
+    -[I really love reflections and shadows](user_emotion)
+    -[I feel awful](user_emotion)
+    -[I am sick of myself](user_emotion)
+    -[I wanna scream, I'm not okay](user_emotion)
+    -[I feel very sad](user_emotion)
+    -[I think i am depressed](user_emotion)
+    -[My day was awful,I feel dejected](user_emotion)
+
+- intent: yoga
+  examples: |
+    - I want to do Yoga
+    - How about I do some yoga
+    - yoga it is
+    - I like to exercise
+    - How about I excercise
+    - I like to excercise
+    - Excercise
+    - Yoga
+    - I would like to do yoga
+    - I want to do yoga
+
+- intent: book 
+  examples: |
+    - I want to read a book
+    - Suggest me a book
+    - Can you suggest a book
+    - I want some reading material
+    - Read a book
+    - Suggest good books to read
+    - I want to read books
+
+- intent: healthtips
+  examples: |
+    - what do you think about my physical health?
+    - any tips for physical health?
+    - any tips for my health?
+    - what about my health?
+    - what do you think about my health?
+    - what should i do for a healthy lifestyle
+    
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: options
+  examples: |
+    - What can you do?
+    - What are you capable of?
+    - What are the things you can help me with?
+    - What are the list of options you can help me with?

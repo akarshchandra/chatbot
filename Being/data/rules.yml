@@ -1,0 +1,67 @@
+version: "3.1"
+
+rules:
+
+- rule: Activate Phi Form
+  steps:
+  - intent: give_details
+  - action: simple_info_form
+  - active_loop: simple_info_form
+
+- rule: Submit Phi Form
+  condition:
+  - active_loop: simple_info_form
+  steps:
+  - action: simple_info_form
+  - active_loop: null
+  - slot_was_set: 
+    - requested_slot: null
+  - action: utter_submit
+  - action: action_hello_world
+  - action: utter_slot
+  - action: action_save_user
+
+- rule: Triger nutrition
+  steps:
+  - intent: query_nutrition
+  - action: action_query_nutrition
+
+- rule: Fetch Label
+  steps:
+  - intent: query_label
+  - action: action_query_label
+
+- rule: Fetch Exercise
+  steps:
+  - intent: query_exercise
+  - action: action_query_exercise
+
+- rule: Fetch Emotion
+  steps:
+  - intent: query_emotion
+  - action: action_query_emotion
+
+- rule: React Yoga
+  steps:
+  - intent: yoga
+  - action: utter_yoga
+
+- rule: React Book
+  steps:
+  - intent: book
+  - action: action_query_book
+
+- rule: React Healthtip
+  steps:
+  - intent: healthtips
+  - action: action_query_heathtips
+
+- rule: I am a bot anytime user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: options to the user
+  steps:
+  - intent: options
+  - action: utter_options
