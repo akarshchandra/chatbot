@@ -29,7 +29,7 @@ Bot nutrition
 ![image](https://user-images.githubusercontent.com/95599941/168412651-bf2b27f1-f61e-434a-b65a-07e12fc68c82.png)
 
 Bot Label
-
+Hardcoded some of the Id's required to fetch label to prevent two api calls 
 ![image](https://user-images.githubusercontent.com/95599941/168412670-91b8c421-b165-4d42-9fe5-02f10f33091c.png)
 
 ![image](https://user-images.githubusercontent.com/95599941/168412680-e6efbbda-2242-4d33-a400-a91e01363269.png)
