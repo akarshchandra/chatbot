@@ -2,7 +2,7 @@
 Being- A wellness Chatbot
 
 ## Abstract 
-This is a general Purpose welness chatbot which caters to the needs of fitness,mental health and nutrition. With the advent of Big Data and ML revolutionising the healthcare domain its only time that general welness industry benifits from NLP and ML
+This is a general Purpose wellness chatbot which caters to the needs of fitness,mental health and nutrition. With the advent of Big Data and ML revolutionising the healthcare domain its only time that general welness industry benifits from NLP and ML
 
 ## About the repo and Installation
 The entire code required to excecute the project is under the Being folder. The project is developed on a Windows machine   Please follow the steps below to recreate the project:
